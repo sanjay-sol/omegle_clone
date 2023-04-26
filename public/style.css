@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-  height: 20rem;
+  height: 22rem;
 }
 
 .description {
@@ -57,7 +57,7 @@ body {
 }
 
 .conversation {
-  height: 83%;
+  height: 77%;
   background-color: white;
   border: 1px solid #cccccc;
   border-top-left-radius: 7px;
@@ -109,6 +109,9 @@ body {
 #send {
   color: white;
 }
+#really {
+  color: white;
+}
 .btn:focus {
   outline: none;
 }
@@ -126,6 +129,9 @@ body {
   color: white !important;
   font-weight: 600 !important;
   border: none !important;
+}
+.really{
+    color:white !important;
 }
 
 .start:focus {
@@ -168,12 +174,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 48.125em) {
-  /* 770px */
-  .online {
-    display: none;
-  }
-}
+
 
 @media only screen and (max-width: 43.75em) {
   /* 700px */
@@ -212,6 +213,6 @@ body {
 @media only screen and (max-width: 28.125em) {
   /* 450px */
   .logo {
-    height: 12rem;
+    height: 20rem;
   }
 }
