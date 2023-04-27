@@ -76,7 +76,12 @@ console.log(roomName);
       const peerId = ids[0] === socket.id ? ids[1] : ids[0];
 
       const peer = notAvailable.find((user) => user.id === peerId);
-      peer.emit("strangerIsTyping", msg);
+      if(msg){
+        peer.emit("strangerIsTyping", msg);
+      }else{
+        peer.emit("strangerIsTyping", "Please Refresh page...");
+      }
+      
     }
 
     
